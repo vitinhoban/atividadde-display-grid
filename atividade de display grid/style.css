@@ -1,0 +1,124 @@
+:root {
+    --amarelo: #BFF009;
+    --cinza: #868585;
+    --preto: #1e1e1e;
+    --branco: #ffffff;
+    --cinzaClaro: #F2F2F2;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    padding: 19px 0px;
+}
+
+header section {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    width: 1312px;
+    margin: 0 auto;
+}
+
+header section nav {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 32px;
+    background-color: var(--cinzaClaro);
+    padding: 16px;
+    justify-content: center;
+}
+
+header section nav a {
+    text-decoration: none;
+    color: var(--preto);
+}
+
+header section > a {
+    color: var(--preto);
+    background-color: var(--amarelo);
+    padding: 16px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+main section {
+    width: 1312px;
+    margin: 40px auto;
+}
+
+main header {
+    text-align: center;
+}
+
+main header small {
+    padding: 8px;
+    background-color: var(--amarelo);
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--preto);
+    border-radius: 8px;
+}
+
+main header h1 {
+    font-size: 48px;
+    padding: 8px 0px;
+}
+
+main header p {
+    font-size: 14px;
+    color: var(--cinza);
+    max-width: 354px;
+    margin: 0 auto;
+}
+
+main section > section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(368px, 1fr));
+    gap: 32px;
+    margin-top: 20px;
+}
+
+main section .card {
+    padding: 24px;
+    display: grid;
+    gap: 16px;
+    background-color: var(--cinzaClaro);
+    border-radius: 8px;
+}
+
+main section .card a {
+    color: var(--preto);
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+main section .card p {
+    color: var(--cinza);
+    font-size: 14px;
+}
+
+main section .card:hover {
+    background-color: var(--preto);
+}
+
+main section .card:hover a {
+    color: var(--branco);
+}
+
+footer {
+    text-align: center;
+    background-color: var(--preto);
+    color: var(--cinza);
+    padding: 46px 0px;
+}
